@@ -21,6 +21,12 @@
             <a class="site-nav__link" href="catalog.html">Каталог</a>
           </li>
           <li class="site-nav__item">
+            <a class="site-nav__link" href="product.html">Карточка товара</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="order.html">Заявка</a>
+          </li>
+          <li class="site-nav__item">
             <a class="site-nav__link" href="contacts.html">Контакты</a>
           </li>
           <li class="site-nav__item">
@@ -41,11 +47,13 @@
     <section class="hero">
       <h1 class="hero__title">Учебный интернет-магазин</h1>
       <p class="hero__text">
-        Это стартовая страница учебного frontend-проекта.
-        В дальнейшем на её основе будет разработан многостраничный сайт
-        интернет-магазина или каталога услуг.
+        Многостраничный сайт на HTML и CSS: каталог товаров, карточки
+        с характеристиками и форма оформления заявки.
       </p>
-      <a class="button button--primary hero__button" href="#popular">Перейти к товарам</a>
+      <div class="hero__actions">
+        <a class="button button--primary" href="#popular">Перейти к товарам</a>
+        <a class="button button--secondary" href="order.html">Оставить заявку</a>
+      </div>
     </section>
 
     <section class="section" id="advantages">
@@ -53,8 +61,8 @@
       <ul class="advantages-list">
         <li class="advantages-list__item">понятная HTML-структура;</li>
         <li class="advantages-list__item">семантические блоки страницы;</li>
-        <li class="advantages-list__item">подключение внешнего CSS-файла;</li>
-        <li class="advantages-list__item">подготовка к разработке многостраничного сайта.</li>
+        <li class="advantages-list__item">единый CSS-файл и БЭМ-именование классов;</li>
+        <li class="advantages-list__item">удобная навигация между страницами и форма заявки.</li>
       </ul>
     </section>
 
@@ -62,38 +70,53 @@
       <h2 class="section__title">Популярные товары</h2>
       <div class="products-grid">
         <article class="product-card product-card--featured">
+          <span class="product-card__badge product-card__badge--hit">Хит</span>
+          <img class="product-card__image" src="images/product-1.svg" alt="Товар 1" width="400" height="300">
           <h3 class="product-card__title">Товар 1</h3>
           <p class="product-card__description">Краткое описание учебного товара.</p>
           <p class="product-card__price">Цена: 1000 руб.</p>
-          <button class="button button--primary product-card__button" type="button" data-product="Товар 1">
-            Заказать
-          </button>
+          <div class="product-card__actions">
+            <button class="button button--primary product-card__button" type="button" data-product="Товар 1">
+              Заказать
+            </button>
+            <a class="button button--secondary product-card__link" href="product.html">Подробнее</a>
+          </div>
         </article>
         <article class="product-card">
+          <span class="product-card__badge product-card__badge--new">Новинка</span>
+          <img class="product-card__image" src="images/product-2.svg" alt="Товар 2" width="400" height="300">
           <h3 class="product-card__title">Товар 2</h3>
           <p class="product-card__description">Краткое описание учебного товара.</p>
           <p class="product-card__price">Цена: 1500 руб.</p>
-          <button class="button button--primary product-card__button" type="button" data-product="Товар 2">
-            Заказать
-          </button>
+          <div class="product-card__actions">
+            <button class="button button--primary product-card__button" type="button" data-product="Товар 2">
+              Заказать
+            </button>
+            <a class="button button--secondary product-card__link" href="product.html">Подробнее</a>
+          </div>
         </article>
-        <article class="product-card">
+        <article class="product-card product-card--discount">
+          <span class="product-card__badge product-card__badge--sale">Скидка</span>
+          <img class="product-card__image" src="images/product-3.svg" alt="Товар 3" width="400" height="300">
           <h3 class="product-card__title">Товар 3</h3>
           <p class="product-card__description">Краткое описание учебного товара.</p>
-          <p class="product-card__price">Цена: 2000 руб.</p>
-          <button class="button button--primary product-card__button" type="button" data-product="Товар 3">
-            Заказать
-          </button>
+          <p class="product-card__price">Цена: 2000 руб. <span class="product-card__price-old">2500 руб.</span></p>
+          <div class="product-card__actions">
+            <button class="button button--primary product-card__button" type="button" data-product="Товар 3">
+              Заказать
+            </button>
+            <a class="button button--secondary product-card__link" href="product.html">Подробнее</a>
+          </div>
         </article>
       </div>
     </section>
 
     <aside class="aside-info">
-      <h2 class="aside-info__title">Информация для студентов</h2>
+      <h2 class="aside-info__title">О проекте</h2>
       <p class="aside-info__text">
-        На следующих практических занятиях этот проект будет расширяться:
-        появятся формы, модальное окно, дополнительные страницы, Flex/Grid,
-        БЭМ-структура и адаптивная версия сайта.
+        Проект выполнен в рамках контрольной работы №1 по дисциплине
+        «Фронтенд и бэкенд разработка»: Flexbox, CSS Grid, БЭМ и CSS-переменные
+        без CSS-фреймворков.
       </p>
     </aside>
   </main>
@@ -102,6 +125,8 @@
     <p class="site-footer__text">&copy; 2026 Учебный проект. Все права защищены.</p>
     <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
   </footer>
+
+  <a class="to-top" href="#">&uarr; Наверх</a>
 
   <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
     <h2 class="order-dialog__title" id="order-dialog-title">Оформление заявки</h2>
