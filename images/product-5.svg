@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Планшет Slate 10">
+  <rect width="400" height="300" fill="#f0fdf4"/>
+  <rect x="90" y="45" width="220" height="210" rx="18" fill="#1e1b4b"/>
+  <rect x="102" y="57" width="196" height="186" rx="6" fill="#4f46e5"/>
+  <circle cx="96" cy="150" r="2.5" fill="#a5b4fc"/>
+  <rect x="122" y="80" width="70" height="46" rx="6" fill="#a5b4fc"/>
+  <rect x="204" y="80" width="74" height="20" rx="4" fill="#c7d2fe"/>
+  <rect x="204" y="108" width="54" height="18" rx="4" fill="#c7d2fe"/>
+  <rect x="122" y="142" width="156" height="14" rx="4" fill="#c7d2fe"/>
+  <rect x="122" y="166" width="120" height="14" rx="4" fill="#c7d2fe"/>
+</svg>

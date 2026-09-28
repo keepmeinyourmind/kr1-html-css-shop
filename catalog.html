@@ -3,14 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Каталог товаров учебного интернет-магазина.">
-  <title>Каталог товаров — Учебный интернет-магазин</title>
+  <meta name="description" content="Каталог техники TechBox: смартфоны, ноутбуки, аудио, умные часы и планшеты.">
+  <title>Каталог техники — TechBox</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="site-header__inner">
-      <a class="site-header__logo" href="index.html">ShopProject</a>
+      <a class="site-header__logo" href="index.html">
+        <img class="site-header__logo-image" src="images/logo.svg" alt="" width="28" height="28">
+        TechBox
+      </a>
       <nav class="site-nav" aria-label="Основная навигация">
         <ul class="site-nav__list">
           <li class="site-nav__item">
@@ -18,9 +22,6 @@
           </li>
           <li class="site-nav__item">
             <a class="site-nav__link site-nav__link--active" href="catalog.html" aria-current="page">Каталог</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="product.html">Карточка товара</a>
           </li>
           <li class="site-nav__item">
             <a class="site-nav__link" href="order.html">Заявка</a>
@@ -49,9 +50,10 @@
     </nav>
 
     <section class="section">
-      <h1 class="section__title">Каталог товаров</h1>
+      <h1 class="section__title">Каталог техники</h1>
       <p>
-        Учебный каталог товаров. Блок фильтров пока выполнен как статическая разметка.
+        Смартфоны, ноутбуки, аудио и умные устройства. Блок фильтров пока выполнен
+        как статическая разметка.
       </p>
     </section>
 
@@ -65,21 +67,33 @@
               <input type="checkbox" id="filter-all" name="category" value="all">
               Все товары
             </label>
-            <label class="filters-form__label" for="filter-popular">
-              <input type="checkbox" id="filter-popular" name="category" value="popular">
-              Популярные
+            <label class="filters-form__label" for="filter-phones">
+              <input type="checkbox" id="filter-phones" name="category" value="phones">
+              Смартфоны
             </label>
-            <label class="filters-form__label" for="filter-new">
-              <input type="checkbox" id="filter-new" name="category" value="new">
-              Новинки
+            <label class="filters-form__label" for="filter-laptops">
+              <input type="checkbox" id="filter-laptops" name="category" value="laptops">
+              Ноутбуки
+            </label>
+            <label class="filters-form__label" for="filter-audio">
+              <input type="checkbox" id="filter-audio" name="category" value="audio">
+              Аудио
+            </label>
+            <label class="filters-form__label" for="filter-wearables">
+              <input type="checkbox" id="filter-wearables" name="category" value="wearables">
+              Носимая электроника
+            </label>
+            <label class="filters-form__label" for="filter-tablets">
+              <input type="checkbox" id="filter-tablets" name="category" value="tablets">
+              Планшеты
             </label>
           </fieldset>
           <fieldset class="filters-form__group">
-            <legend class="filters-form__legend">Цена</legend>
+            <legend class="filters-form__legend">Цена, руб.</legend>
             <label class="filters-form__label" for="price-from">От</label>
             <input class="filters-form__input" id="price-from" name="price-from" type="number" min="0" placeholder="0">
             <label class="filters-form__label" for="price-to">До</label>
-            <input class="filters-form__input" id="price-to" name="price-to" type="number" min="0" placeholder="5000">
+            <input class="filters-form__input" id="price-to" name="price-to" type="number" min="0" placeholder="60000">
           </fieldset>
           <button class="button button--primary" type="submit">Применить</button>
         </form>
@@ -90,61 +104,67 @@
         <div class="products-grid">
           <article class="product-card product-card--featured">
             <span class="product-card__badge product-card__badge--hit">Хит</span>
-            <img class="product-card__image" src="images/product-1.svg" alt="Товар 1" width="400" height="300">
-            <h3 class="product-card__title">Товар 1</h3>
-            <p class="product-card__description">Краткое описание учебного товара.</p>
-            <p class="product-card__price">Цена: 1000 руб.</p>
+            <img class="product-card__image" src="images/product-1.svg" alt="Смартфон Nova X5" width="400" height="300">
+            <p class="product-card__category">Смартфоны</p>
+            <h3 class="product-card__title">Смартфон Nova X5</h3>
+            <p class="product-card__description">6,5" AMOLED-экран, 128 ГБ памяти, аккумулятор 5000 мАч.</p>
+            <p class="product-card__price">24&nbsp;990 руб.</p>
             <div class="product-card__actions">
               <a class="button button--primary product-card__link" href="product.html">Подробнее</a>
             </div>
           </article>
           <article class="product-card">
             <span class="product-card__badge product-card__badge--new">Новинка</span>
-            <img class="product-card__image" src="images/product-2.svg" alt="Товар 2" width="400" height="300">
-            <h3 class="product-card__title">Товар 2</h3>
-            <p class="product-card__description">Краткое описание учебного товара.</p>
-            <p class="product-card__price">Цена: 1500 руб.</p>
+            <img class="product-card__image" src="images/product-2.svg" alt="Ноутбук Aero 14" width="400" height="300">
+            <p class="product-card__category">Ноутбуки</p>
+            <h3 class="product-card__title">Ноутбук Aero 14</h3>
+            <p class="product-card__description">14" IPS-экран, 16 ГБ оперативной памяти, SSD на 512 ГБ.</p>
+            <p class="product-card__price">54&nbsp;990 руб.</p>
             <div class="product-card__actions">
-              <a class="button button--primary product-card__link" href="product.html">Подробнее</a>
+              <a class="button button--primary product-card__link" href="product-2.html">Подробнее</a>
             </div>
           </article>
           <article class="product-card product-card--discount">
             <span class="product-card__badge product-card__badge--sale">Скидка</span>
-            <img class="product-card__image" src="images/product-3.svg" alt="Товар 3" width="400" height="300">
-            <h3 class="product-card__title">Товар 3</h3>
-            <p class="product-card__description">Краткое описание учебного товара.</p>
-            <p class="product-card__price">Цена: 2000 руб. <span class="product-card__price-old">2500 руб.</span></p>
+            <img class="product-card__image" src="images/product-3.svg" alt="Наушники Pulse ANC" width="400" height="300">
+            <p class="product-card__category">Аудио</p>
+            <h3 class="product-card__title">Наушники Pulse ANC</h3>
+            <p class="product-card__description">Активное шумоподавление и до 30 часов работы.</p>
+            <p class="product-card__price">6&nbsp;990 руб. <span class="product-card__price-old">8&nbsp;990 руб.</span></p>
             <div class="product-card__actions">
-              <a class="button button--primary product-card__link" href="product.html">Подробнее</a>
+              <a class="button button--primary product-card__link" href="product-3.html">Подробнее</a>
             </div>
           </article>
           <article class="product-card">
             <span class="product-card__badge product-card__badge--new">Новинка</span>
-            <img class="product-card__image" src="images/product-1.svg" alt="Товар 4" width="400" height="300">
-            <h3 class="product-card__title">Товар 4</h3>
-            <p class="product-card__description">Краткое описание учебного товара.</p>
-            <p class="product-card__price">Цена: 2500 руб.</p>
+            <img class="product-card__image" src="images/product-4.svg" alt="Умные часы Chrono S" width="400" height="300">
+            <p class="product-card__category">Носимая электроника</p>
+            <h3 class="product-card__title">Умные часы Chrono S</h3>
+            <p class="product-card__description">AMOLED-экран, датчики здоровья и до 10 дней автономности.</p>
+            <p class="product-card__price">9&nbsp;990 руб.</p>
             <div class="product-card__actions">
-              <a class="button button--primary product-card__link" href="product.html">Подробнее</a>
+              <a class="button button--primary product-card__link" href="product-4.html">Подробнее</a>
             </div>
           </article>
           <article class="product-card">
-            <img class="product-card__image" src="images/product-2.svg" alt="Товар 5" width="400" height="300">
-            <h3 class="product-card__title">Товар 5</h3>
-            <p class="product-card__description">Краткое описание учебного товара.</p>
-            <p class="product-card__price">Цена: 3000 руб.</p>
+            <img class="product-card__image" src="images/product-5.svg" alt="Планшет Slate 10" width="400" height="300">
+            <p class="product-card__category">Планшеты</p>
+            <h3 class="product-card__title">Планшет Slate 10</h3>
+            <p class="product-card__description">10,4" экран, 6 ГБ памяти и аккумулятор 7000 мАч.</p>
+            <p class="product-card__price">21&nbsp;990 руб.</p>
             <div class="product-card__actions">
-              <a class="button button--primary product-card__link" href="product.html">Подробнее</a>
+              <a class="button button--primary product-card__link" href="product-5.html">Подробнее</a>
             </div>
           </article>
           <article class="product-card">
             <span class="product-card__badge product-card__badge--hit">Хит</span>
-            <img class="product-card__image" src="images/product-3.svg" alt="Товар 6" width="400" height="300">
-            <h3 class="product-card__title">Товар 6</h3>
-            <p class="product-card__description">Краткое описание учебного товара.</p>
-            <p class="product-card__price">Цена: 3500 руб.</p>
+            <img class="product-card__image" src="images/product-6.svg" alt="Колонка Boom Mini" width="400" height="300">
+            <p class="product-card__category">Аудио</p>
+            <h3 class="product-card__title">Колонка Boom Mini</h3>
+            <p class="product-card__description">Мощность 20 Вт, защита IP67 и 15 часов работы.</p>
+            <p class="product-card__price">3&nbsp;490 руб.</p>
             <div class="product-card__actions">
-              <a class="button button--primary product-card__link" href="product.html">Подробнее</a>
+              <a class="button button--primary product-card__link" href="product-6.html">Подробнее</a>
             </div>
           </article>
         </div>
@@ -153,7 +173,7 @@
   </main>
 
   <footer class="site-footer">
-    <p class="site-footer__text">&copy; 2026 Учебный проект. Все права защищены.</p>
+    <p class="site-footer__text">&copy; 2026 TechBox. Учебный проект. Все права защищены.</p>
     <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
   </footer>
 

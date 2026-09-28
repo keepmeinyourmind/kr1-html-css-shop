@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Умные часы Chrono S">
+  <rect width="400" height="300" fill="#ecfeff"/>
+  <rect x="172" y="14" width="56" height="86" rx="10" fill="#312e81"/>
+  <rect x="172" y="200" width="56" height="86" rx="10" fill="#312e81"/>
+  <rect x="140" y="90" width="120" height="120" rx="28" fill="#1e1b4b"/>
+  <circle cx="200" cy="150" r="44" fill="#4f46e5"/>
+  <path d="M200 150 V124 M200 150 L220 162" stroke="#ffffff" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <rect x="258" y="136" width="8" height="28" rx="4" fill="#312e81"/>
+</svg>
