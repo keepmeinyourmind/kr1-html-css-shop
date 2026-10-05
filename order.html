@@ -47,6 +47,7 @@
   <main class="page">
     <nav class="breadcrumbs" aria-label="Хлебные крошки">
       <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <span class="breadcrumbs__separator" aria-hidden="true">—</span>
       <span class="breadcrumbs__current">Заявка</span>
     </nav>
 
@@ -78,12 +79,12 @@
           <label class="order-form__label" for="order-product">Выбранный товар</label>
           <select class="order-form__select" id="order-product" name="product">
             <option value="">Не выбран</option>
-            <option value="Смартфон Nova X5">Смартфон Nova X5</option>
-            <option value="Ноутбук Aero 14">Ноутбук Aero 14</option>
-            <option value="Наушники Pulse ANC">Наушники Pulse ANC</option>
-            <option value="Умные часы Chrono S">Умные часы Chrono S</option>
-            <option value="Планшет Slate 10">Планшет Slate 10</option>
-            <option value="Колонка Boom Mini">Колонка Boom Mini</option>
+            <option value="iPhone 17 Pro Max">iPhone 17 Pro Max</option>
+            <option value="MacBook Pro">MacBook Pro</option>
+            <option value="AirPods Max">AirPods Max</option>
+            <option value="Apple Watch Series 10">Apple Watch Series 10</option>
+            <option value="iPad Pro">iPad Pro</option>
+            <option value="HomePod">HomePod</option>
           </select>
         </div>
 
@@ -122,8 +123,17 @@
   </main>
 
   <footer class="site-footer">
-    <p class="site-footer__text">&copy; 2026 TechBox. Учебный проект. Все права защищены.</p>
-    <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
+    <div class="site-footer__inner">
+      <div class="site-footer__info">
+        <p class="site-footer__title">TechBox</p>
+        <p class="site-footer__text">Магазин техники и гаджетов</p>
+        <p class="site-footer__text"><a class="site-footer__link" href="contacts.html">Контакты</a></p>
+      </div>
+      <div class="site-footer__copy">
+        <p class="site-footer__text">&copy; 2026 TechBox. Учебный проект. Все права защищены.</p>
+        <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
+      </div>
+    </div>
   </footer>
 
   <a class="to-top" href="#">&uarr; Наверх</a>

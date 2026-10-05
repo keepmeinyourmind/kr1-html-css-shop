@@ -46,6 +46,7 @@
   <main class="page">
     <nav class="breadcrumbs" aria-label="Хлебные крошки">
       <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <span class="breadcrumbs__separator" aria-hidden="true">—</span>
       <span class="breadcrumbs__current">Контакты</span>
     </nav>
 
@@ -60,6 +61,11 @@
       </ul>
     </section>
 
+    <section class="section">
+      <h2 class="section__title">Как нас найти</h2>
+      <iframe class="contact-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4c0e001c937c902e7363c65e42576e5b10b37491c9562b72b2091ea5d79f8857&amp;source=constructor" title="Карта: как найти магазин TechBox" loading="lazy"></iframe>
+    </section>
+
     <section class="section" id="feedback">
       <h2 class="section__title">Обратная связь</h2>
       <p>
@@ -70,8 +76,16 @@
   </main>
 
   <footer class="site-footer">
-    <p class="site-footer__text">&copy; 2026 TechBox. Учебный проект. Все права защищены.</p>
-    <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
+    <div class="site-footer__inner">
+      <div class="site-footer__info">
+        <p class="site-footer__title">TechBox</p>
+        <p class="site-footer__text">Магазин техники и гаджетов</p>
+      </div>
+      <div class="site-footer__copy">
+        <p class="site-footer__text">&copy; 2026 TechBox. Учебный проект. Все права защищены.</p>
+        <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
+      </div>
+    </div>
   </footer>
 
   <a class="to-top" href="#">&uarr; Наверх</a>

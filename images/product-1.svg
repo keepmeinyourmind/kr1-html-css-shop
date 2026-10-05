@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Смартфон Nova X5">
-  <rect width="400" height="300" fill="#eef2ff"/>
-  <rect x="155" y="30" width="90" height="240" rx="16" fill="#1e1b4b"/>
-  <rect x="163" y="48" width="74" height="204" rx="6" fill="#4f46e5"/>
-  <circle cx="200" cy="38" r="3" fill="#a5b4fc"/>
-  <circle cx="200" cy="120" r="24" fill="#a5b4fc"/>
-  <rect x="178" y="170" width="44" height="8" rx="4" fill="#c7d2fe"/>
-  <rect x="184" y="188" width="32" height="8" rx="4" fill="#c7d2fe"/>
-</svg>
