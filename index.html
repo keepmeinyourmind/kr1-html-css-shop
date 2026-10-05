@@ -3,15 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Учебный frontend-проект интернет-магазина.">
-  <title>Учебный интернет-магазин</title>
+  <meta name="description" content="TechBox — учебный интернет-магазин техники и гаджетов: смартфоны, ноутбуки, аудио и умные устройства.">
+  <title>TechBox — магазин техники и гаджетов</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
 </head>
 <body>
   <header class="site-header">
     <div class="site-header__inner">
-      <a class="site-header__logo" href="index.html">ShopProject</a>
+      <a class="site-header__logo" href="index.html">
+        <img class="site-header__logo-image" src="images/logo.svg" alt="" width="28" height="28">
+        TechBox
+      </a>
       <nav class="site-nav" aria-label="Основная навигация">
         <ul class="site-nav__list">
           <li class="site-nav__item">
@@ -19,9 +23,6 @@
           </li>
           <li class="site-nav__item">
             <a class="site-nav__link" href="catalog.html">Каталог</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="product.html">Карточка товара</a>
           </li>
           <li class="site-nav__item">
             <a class="site-nav__link" href="order.html">Заявка</a>
@@ -45,10 +46,10 @@
 
   <main class="page">
     <section class="hero">
-      <h1 class="hero__title">Учебный интернет-магазин</h1>
+      <h1 class="hero__title">Техника, которая делает жизнь проще</h1>
       <p class="hero__text">
-        Многостраничный сайт на HTML и CSS: каталог товаров, карточки
-        с характеристиками и форма оформления заявки.
+        Смартфоны, ноутбуки и гаджеты с гарантией 12 месяцев
+        и бесплатной доставкой от 5&nbsp;000&nbsp;руб.
       </p>
       <div class="hero__actions">
         <a class="button button--primary" href="#popular">Перейти к товарам</a>
@@ -57,12 +58,36 @@
     </section>
 
     <section class="section" id="advantages">
-      <h2 class="section__title">Преимущества проекта</h2>
+      <h2 class="section__title">Преимущества магазина</h2>
       <ul class="advantages-list">
-        <li class="advantages-list__item">понятная HTML-структура;</li>
-        <li class="advantages-list__item">семантические блоки страницы;</li>
-        <li class="advantages-list__item">единый CSS-файл и БЭМ-именование классов;</li>
-        <li class="advantages-list__item">удобная навигация между страницами и форма заявки.</li>
+        <li class="advantages-list__item">
+          <span class="advantages-list__icon">
+            <svg class="advantages-list__icon-image" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.2 7.8 8 9 4.8-1.2 8-4.5 8-9V6l-8-3z"/><path d="m9 12 2 2 4-4"/></svg>
+          </span>
+          <h3 class="advantages-list__title">Гарантия 12 месяцев</h3>
+          <p class="advantages-list__text">На всю технику: чиним или меняем бесплатно.</p>
+        </li>
+        <li class="advantages-list__item">
+          <span class="advantages-list__icon">
+            <svg class="advantages-list__icon-image" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h11v10H3z"/><path d="M14 9h4l3 3.5V16h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>
+          </span>
+          <h3 class="advantages-list__title">Бесплатная доставка</h3>
+          <p class="advantages-list__text">При заказе от 5&nbsp;000&nbsp;руб. привезём за 1–3 дня.</p>
+        </li>
+        <li class="advantages-list__item">
+          <span class="advantages-list__icon">
+            <svg class="advantages-list__icon-image" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 0 1 14-5.3L20 9"/><path d="M20 4v5h-5"/><path d="M20 12a8 8 0 0 1-14 5.3L4 15"/><path d="M4 20v-5h5"/></svg>
+          </span>
+          <h3 class="advantages-list__title">Возврат и обмен</h3>
+          <p class="advantages-list__text">В течение 14 дней, если техника не подошла.</p>
+        </li>
+        <li class="advantages-list__item">
+          <span class="advantages-list__icon">
+            <svg class="advantages-list__icon-image" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/><path d="M19 20c0 1.5-2 2-5 2"/></svg>
+          </span>
+          <h3 class="advantages-list__title">Консультация</h3>
+          <p class="advantages-list__text">Поможем выбрать по телефону с 10:00 до 20:00.</p>
+        </li>
       </ul>
     </section>
 
@@ -71,12 +96,13 @@
       <div class="products-grid">
         <article class="product-card product-card--featured">
           <span class="product-card__badge product-card__badge--hit">Хит</span>
-          <img class="product-card__image" src="images/product-1.svg" alt="Товар 1" width="400" height="300">
-          <h3 class="product-card__title">Товар 1</h3>
-          <p class="product-card__description">Краткое описание учебного товара.</p>
-          <p class="product-card__price">Цена: 1000 руб.</p>
+          <img class="product-card__image" src="images/product-1.jpg" alt="iPhone 17 Pro Max" width="400" height="300">
+          <p class="product-card__category">Смартфоны</p>
+          <h3 class="product-card__title">iPhone 17 Pro Max</h3>
+          <p class="product-card__description">Экран 6,9" OLED 120 Гц, чип A19 Pro, тройная камера 48 Мп.</p>
+          <p class="product-card__price">139&nbsp;990&nbsp;руб.</p>
           <div class="product-card__actions">
-            <button class="button button--primary product-card__button" type="button" data-product="Товар 1">
+            <button class="button button--primary product-card__button" type="button" data-product="iPhone 17 Pro Max">
               Заказать
             </button>
             <a class="button button--secondary product-card__link" href="product.html">Подробнее</a>
@@ -84,46 +110,57 @@
         </article>
         <article class="product-card">
           <span class="product-card__badge product-card__badge--new">Новинка</span>
-          <img class="product-card__image" src="images/product-2.svg" alt="Товар 2" width="400" height="300">
-          <h3 class="product-card__title">Товар 2</h3>
-          <p class="product-card__description">Краткое описание учебного товара.</p>
-          <p class="product-card__price">Цена: 1500 руб.</p>
+          <img class="product-card__image" src="images/product-2.jpg" alt="MacBook Pro" width="400" height="300">
+          <p class="product-card__category">Ноутбуки</p>
+          <h3 class="product-card__title">MacBook Pro</h3>
+          <p class="product-card__description">Дисплей Liquid Retina XDR, чип Apple серии M, два цвета корпуса.</p>
+          <p class="product-card__price">189&nbsp;990&nbsp;руб.</p>
           <div class="product-card__actions">
-            <button class="button button--primary product-card__button" type="button" data-product="Товар 2">
+            <button class="button button--primary product-card__button" type="button" data-product="MacBook Pro">
               Заказать
             </button>
-            <a class="button button--secondary product-card__link" href="product.html">Подробнее</a>
+            <a class="button button--secondary product-card__link" href="product-2.html">Подробнее</a>
           </div>
         </article>
         <article class="product-card product-card--discount">
           <span class="product-card__badge product-card__badge--sale">Скидка</span>
-          <img class="product-card__image" src="images/product-3.svg" alt="Товар 3" width="400" height="300">
-          <h3 class="product-card__title">Товар 3</h3>
-          <p class="product-card__description">Краткое описание учебного товара.</p>
-          <p class="product-card__price">Цена: 2000 руб. <span class="product-card__price-old">2500 руб.</span></p>
+          <img class="product-card__image" src="images/product-3.jpg" alt="AirPods Max" width="400" height="300">
+          <p class="product-card__category">Аудио</p>
+          <h3 class="product-card__title">AirPods Max</h3>
+          <p class="product-card__description">Активное шумоподавление, пространственное аудио, до 20 часов работы.</p>
+          <p class="product-card__price">54&nbsp;990&nbsp;руб. <span class="product-card__price-old">62&nbsp;990&nbsp;руб.</span></p>
           <div class="product-card__actions">
-            <button class="button button--primary product-card__button" type="button" data-product="Товар 3">
+            <button class="button button--primary product-card__button" type="button" data-product="AirPods Max">
               Заказать
             </button>
-            <a class="button button--secondary product-card__link" href="product.html">Подробнее</a>
+            <a class="button button--secondary product-card__link" href="product-3.html">Подробнее</a>
           </div>
         </article>
       </div>
     </section>
 
     <aside class="aside-info">
-      <h2 class="aside-info__title">О проекте</h2>
+      <h2 class="aside-info__title">О магазине</h2>
       <p class="aside-info__text">
-        Проект выполнен в рамках контрольной работы №1 по дисциплине
-        «Фронтенд и бэкенд разработка»: Flexbox, CSS Grid, БЭМ и CSS-переменные
-        без CSS-фреймворков.
+        TechBox — учебный проект интернет-магазина техники. Сайт выполнен
+        в рамках контрольной работы №1 по дисциплине «Фронтенд и бэкенд разработка»:
+        Flexbox, CSS Grid, БЭМ и CSS-переменные без CSS-фреймворков.
       </p>
     </aside>
   </main>
 
   <footer class="site-footer" id="contacts">
-    <p class="site-footer__text">&copy; 2026 Учебный проект. Все права защищены.</p>
-    <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
+    <div class="site-footer__inner">
+      <div class="site-footer__info">
+        <p class="site-footer__title">TechBox</p>
+        <p class="site-footer__text">Магазин техники и гаджетов</p>
+        <p class="site-footer__text"><a class="site-footer__link" href="contacts.html">Контакты</a></p>
+      </div>
+      <div class="site-footer__copy">
+        <p class="site-footer__text">&copy; 2026 TechBox. Учебный проект. Все права защищены.</p>
+        <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
+      </div>
+    </div>
   </footer>
 
   <a class="to-top" href="#">&uarr; Наверх</a>
@@ -135,54 +172,26 @@
 
       <div class="order-form__field">
         <label class="order-form__label" for="order-name">Имя</label>
-        <input
-          class="order-form__input"
-          id="order-name"
-          name="name"
-          type="text"
-          placeholder="Введите ваше имя"
-          minlength="2"
-          autocomplete="given-name"
-          required
-        >
+        <input class="order-form__input" id="order-name" name="name" type="text"
+          placeholder="Введите ваше имя" minlength="2" autocomplete="given-name" required>
       </div>
 
       <div class="order-form__field">
         <label class="order-form__label" for="order-email">E-mail</label>
-        <input
-          class="order-form__input"
-          id="order-email"
-          name="email"
-          type="email"
-          placeholder="example@mail.ru"
-          autocomplete="email"
-          required
-        >
+        <input class="order-form__input" id="order-email" name="email" type="email"
+          placeholder="example@mail.ru" autocomplete="email" required>
       </div>
 
       <div class="order-form__field">
         <label class="order-form__label" for="order-phone">Телефон</label>
-        <input
-          class="order-form__input"
-          id="order-phone"
-          name="phone"
-          type="tel"
-          inputmode="tel"
-          placeholder="+7 (900) 000-00-00"
-          pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$"
-          required
-        >
+        <input class="order-form__input" id="order-phone" name="phone" type="tel" inputmode="tel"
+          placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" required>
         <small class="order-form__hint">Формат: +7 (900) 000-00-00</small>
       </div>
 
       <div class="order-form__field">
         <label class="order-form__label" for="order-date">Дата связи</label>
-        <input
-          class="order-form__input"
-          id="order-date"
-          name="date"
-          type="date"
-        >
+        <input class="order-form__input" id="order-date" name="date" type="date">
       </div>
 
       <div class="order-form__field">
@@ -197,24 +206,13 @@
 
       <div class="order-form__field">
         <label class="order-form__label" for="order-comment">Комментарий</label>
-        <textarea
-          class="order-form__textarea"
-          id="order-comment"
-          name="comment"
-          rows="4"
-          placeholder="Укажите дополнительную информацию"
-        ></textarea>
+        <textarea class="order-form__textarea" id="order-comment" name="comment" rows="4"
+          placeholder="Укажите дополнительную информацию"></textarea>
       </div>
 
       <div class="order-form__field order-form__field--checkbox">
         <label class="order-form__label" for="order-agreement">
-          <input
-            class="order-form__checkbox"
-            id="order-agreement"
-            name="agreement"
-            type="checkbox"
-            required
-          >
+          <input class="order-form__checkbox" id="order-agreement" name="agreement" type="checkbox" required>
           Я согласен на обработку данных
         </label>
       </div>
